@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "book-share"
+    },
+    "book-share": {
+      "applicationId": "LEIQzfS3UQHoEVC8zSatUm1TiXYQNZT1wHHQnqEL"
+    }
+  }
+}
