@@ -4,7 +4,7 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 import AuthContext from "../context/auth-context";
 
 
-const ProfileScreen = ({ navigation }) => {
+const CreateListingScreen = ({ navigation }) => {
 
     const ctx = useContext(AuthContext);
     const onLogoutPress = () => {
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ProfileScreen
+export default CreateListingScreen

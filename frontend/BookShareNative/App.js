@@ -17,7 +17,7 @@ import HomeStack from './routes/homeStack';
 
 const App = () => {
   const mState = {
-    isLoggedIn: false
+    isLoggedIn: false,
   }
   const [state, setState] = useState(mState)
 

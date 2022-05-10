@@ -2,7 +2,6 @@ const axios = require('axios')
 import { apiKey, appId } from '../../env'
 
 export const signIn = async (email, password) => {
-    console.log(email, password, apiKey, appId)
     const res = await axios.get('https://parseapi.back4app.com/login', {
         params: {
             username: email,
@@ -17,7 +16,12 @@ export const signIn = async (email, password) => {
         return {
             success: true,
             message: "User Signed In",
-            sessionToken: res.data.sessionToken
+            user: {
+                sessionToken: res.data.sessionToken,
+                email: res.data.username,
+                objectId: res.data.objectId,
+                name: res.data.name
+            }
         }
     } else {
         return {
